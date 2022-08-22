@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Book_store1</title>
+</head>
+<body >
+    <div class="container h-8  p-8 flex flex-row">
+<div class="flex flex-row">
+    <div class="bg-gradient-to-r from-red-300 to-red-900 w-10 h-10 mt-3 ml-15 rounded-md">
+<h1 class="text-sm text-gray-600 ml-14 font-bold ">Books for YOU!</h1>
+    </div>
+</div>
+
+<form>   
+    <div class="relative ml-32 mt-3 " >
+        <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+            <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        </div>
+        <input type="search" id="default-search"  
+        class="  pl-10  h-12 w-96 text-sm  text-gray-900 
+        bg-gray-50 rounded-full border border-gray-300
+         focus:border-blue-500 
+         dark:bg-blue-50 dark:border-gray-50 
+         dark:placeholder-gray-400 dark:text-white
+          dark:focus:ring-gray-500 dark:focus:border-gray-500"
+           placeholder="Search Books..." required>
+    </div>
+
+</form>
+
+
+  <ul class= "mt-8 ml-10">
+    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" class="w-3.5 text-red-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path>
+      </svg>
+</ul>
+<a class="ml-8 mt-6" href="#!" role="button">
+    <!-- Facebook -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-7 h-7" style="color: #1877f2;"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+  </a>
+  <a class="ml-8 mt-6" href="#!" role="button">
+    <!-- Instagram -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-7 h-7" style="color: #c13584;"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+  </a>
+
+  <a href="#!" class="ml-8 mt-6" role="button">
+    <!-- Google -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512" class="w-7 h-7" style="color: #ea4335;"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
+  </a>
+   <h2 class ="mt-7 ml-10 font-bold">EN</h2>
+    </div>
+<div class="container flex flex-row mt-32 ml-36">
+<a href="#" class="text-gray-700   hover:text-red-900 hover:scale-150 font-bold">Home</a>
+<a href="#" class="text-gray-700 ml-28 hover:text-red-900 hover:scale-150 font-bold">Best seller</a>
+<a href="#" class="text-gray-700 ml-28 hover:text-red-900 hover:scale-150 font-bold">Category</a>
+<a href="#" class="text-gray-700 ml-28 hover:text-red-900 hover:scale-150 font-bold">Find</a>
+<a href="#" class="text-gray-700 ml-28 hover:text-red-900 hover:scale-150 font-bold">Bloog</a>
+</div>    
+</div>
+
+<div class=" flex flex-row bg-red-200 ml-28 max-w-3xl h-60 mt-24 rounded-3xl shadow-lg ">
+<div class= "flex flex-col">
+    <div  class="text-5xl text-red-900 font-bold mt-12 ml-20"> <h3>Build your library</h3></div>
+
+    <div  class="text-mg text-gray-600 mt-5 ml-20"> <h3>Buy two selected books and get one for free</h3></div>
+<button class="bg-red-900 w-40 h-10
+mt-10 text-zinc-50 rounded-full shadow-md ml-40 "> View all</button>
+</div>
+
+    <img class="w-72 mt-5 " src="./img/read.png">
+    </div>
+    <div  class="text-2xl text-red-900 font-bold mt-12 ml-11"> <h3>Popular now</h3></div>
+
+
+</body>
+</html>
